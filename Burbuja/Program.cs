@@ -20,10 +20,11 @@ namespace Burbuja
             {
                 Console.Write("{0} ", i);
             }
-            Console.ReadLine();
 
             Console.Write("{0} ", "---------------------------------------------------------------------------------");
             //Iteramos, enviando el mayor al final en cada iteración
+            Console.WriteLine("----------Tiempo:" + DateTime.Now.Millisecond);
+
             for (int i = 0; i <= lista.Length - 1; i++)
             {
                 for (int j = 0; j < lista.Length - i - 1; j++)
@@ -42,6 +43,10 @@ namespace Burbuja
             {
                 Console.Write("{0} ", i);
             }
+
+            Console.WriteLine("----------Tiempo:" + DateTime.Now.Millisecond);
+
+
             Console.ReadLine();
         }
     }
